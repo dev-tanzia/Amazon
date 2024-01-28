@@ -1,0 +1,258 @@
+*{
+          padding: 0;
+          margin: 0;
+          font-family: 'Open Sans', sans-serif;
+}
+.container{
+          margin: 0 auto;
+          max-width: 1140px;
+}
+body{
+  background: #dcd3d3;
+}
+.top-header{
+          background: #000;
+          color: #ffff;
+          padding: 6px;
+}
+.top-header .main-column{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.top-header .logo-column{ 
+       width: 15%;
+}
+.top-header img{
+  width: 100px;
+  padding-left: 10px;
+}
+.top-header .search-column{
+          width: 50%;
+          margin-left: 3%;
+          margin-right: 0%;
+}
+.top-header .cart-column{
+          width: 30%;
+          display: flex;
+          justify-content: end;
+          
+}
+/*search*/
+.top-header .search-column  input, .top-header .search-column select{
+          width: 100%;
+          padding: 8px;
+          border: none;
+}
+.top-header .search-column  input:focus-visible{
+          outline: none;
+}
+.search-column:hover{
+           border: 2px solid #efb107;
+           border-radius: 6px;
+}
+.search-column .form{
+          display: flex;
+          flex-wrap: wrap;
+}
+.top-header .form .selection{
+          width: 10%;
+         
+          border-radius: 5px 1px;
+        
+} 
+.top-header .search-column select {
+          border-radius: 5px 0px 0px 5px;
+        }
+.top-header .search-column .submit-button input {
+          border-radius: 0px 5px 5px 0px;
+          background: #efb107;
+          position: relative;
+        }
+.top-header .submit-button::after {
+          content: '\f002';
+          position: absolute;
+          font-family: fontawesome;
+          color: black;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+}
+.top-header .search-box{
+          width: 85%;
+     
+}      
+.top-header .submit-button{
+          width: 5%;
+          position: relative;
+}
+
+/* logo-column */
+.top-header .logo-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 33px;
+  width: 16%;
+}
+.top-header .logo-column .location{
+         position:relative 
+}
+.top-header .logo-column .location::after {
+          content: '\f3c5';
+          position: absolute;
+          font-family: fontawesome;
+          top: 47%;
+          left: -8%;
+          transform: translate(-50%);
+}
+.top-header .logo-column .location a{
+  text-decoration:none;
+  font-size: 15px;
+  color: #ffff;
+}
+/* cart-column */
+.top-header .cart-column li{
+         display: inline-block;
+         list-style: none;
+         padding-right: 22px;
+}
+.top-header .cart-column li:fist-child{
+         padding-right: 0;
+}
+.top-header .cart-column strong{
+        text-decoration: none;
+        display: block;
+}
+.top-header .cart-column ul{
+  display: flex;
+  align-items: center;
+}
+.top-header .cart-column a{
+      text-decoration: none;
+      color: #ffff;
+      font-size: 15px;
+}
+.top-header .cart-column select{
+     font-size: 16px;
+     background: transparent;
+     color: #ffff;
+     border: none;
+     font-weight: 500px;
+     width: 45px;
+}
+.top-header .cart-column .fa-cart-shopping{
+     padding-right: 5px;
+}
+
+.top-header .cart-column img{
+        height: 14px;
+        width: 20px;
+}
+
+/*main-menu*/
+.main-menu{
+  background: rgb(40, 45, 45);
+  padding: 7px;
+}
+.main-menu a{
+      text-decoration: none;
+      list-style: none;
+      color: #ffff;
+      font-size: 15px;
+}
+.main-menu li{
+  list-style: none;
+  display: inline-block;
+  padding-right: 15px;
+}
+/*baner-section*/
+.baner-section img{
+  width: 100%;
+}
+/*Gaming-accessories*/
+.Gaming-accessories .main-column
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  
+}
+.Gaming-accessories .main-column img{
+  width: 100%;
+}
+.Gaming-accessories .main-column .flex-column .flex-columnimg{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.Gaming-accessories .main-column .flex-column .flex-columnimg p{
+  font-size: 13px;
+}
+.Gaming-accessories .main-column .flex-column .flex-columnimg .img-item{
+  height: 101px;
+}
+.Gaming-accessories .main-column .flex-column h3{
+
+  font-size: 18px;
+  text-align: left;
+  padding-top: 29px;
+  padding-bottom: 8px;
+}
+.pc img{
+  height: 219px;
+  width: 270px;
+}
+.Gaming-accessories .main-column .flex-column a{
+  text-decoration: none;
+  color: blue;
+  margin-top: 30px;
+  font-size: 15px;
+  
+}
+.Gaming-accessories .main-column .flex-column
+{
+  background: #ffff;
+  padding: 2px 20px;
+}
+.Gaming-accessories .main-column .flex-column a:hover{
+  border-bottom: 1px solid orangered;
+  color: red;
+}
+.Gaming-accessories .main-column .link{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.Gaming-accessories .img-store{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+column-gap: 10px;
+  
+}
+.Gaming-accessories .img-Amazon img{
+  height: 140px;
+width: 280;
+}
+.Gaming-accessories .img-Gadget img{
+  height: 75px;
+}
+/*top-forbangladesh*/
+.top-forbangladesh{
+  background: #ffff;
+  margin-top: 20px;
+}
+.top-forbangladesh .main-column{
+  column-count: 6;
+  padding-left: 5px;
+ 
+}
+.top-forbangladesh .main-column img{
+  width: 100%;
+  padding-top: 15px;
+}
+.top-forbangladesh .picks img{
+ max-height: 202px;
+ min-width: 180;
+
+}
